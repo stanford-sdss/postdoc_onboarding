@@ -7,8 +7,8 @@ Welcome to the [SDSS Center for Computation](https://sdss-compute.stanford.edu/)
 2. Create a new notebook, and use [Globus](https://www.globus.org/) to confirm that the notebook file is saved in Oak
 3. Clone [this GitHub repo](https://github.com/stanford-sdss/postdoc_onboarding) into Oak and interact using `serc`
 4. Run an [example notebook](https://github.com/stanford-sdss/postdoc_onboarding/main/notebooks/interactive_demo.ipynb), and save the outcomes to Oak
-5. Write a [script]() file based on the [notebook](https://github.com/stanford-sdss/postdoc_onboarding/main/notebooks/interactive_demo.ipynb)
-6. Write an [sbatch file](), and schedule a job using SLURM. 
+5. Write a [script]() file based on analysis pipeline in the [notebook](https://github.com/stanford-sdss/postdoc_onboarding/main/notebooks/interactive_demo.ipynb)
+6. Write an [sbatch file]() for your job, and schedule the job using SLURM
 
 ### Do you have any questions? 
 Please reach out to us at [sdss-compute@stanford.edu](mailto:sdss-compute@stanford.edu), or schedule a consultation with our team [here]().
