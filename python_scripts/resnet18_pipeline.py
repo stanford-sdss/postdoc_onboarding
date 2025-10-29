@@ -124,11 +124,11 @@ def main(batch_size, epochs, lr, num_workers, output_dir):
 
 if __name__ == "__main__":
 
-    #Define hyperparameters, here we switch epochs to 150 because we're running in a job
+    #Define hyperparameters, here we switch to 150 epochs and 8 workers
     BATCH_SIZE = 64
     EPOCHS = 150
     LR = 1e-3
-    NUM_WORKERS = 4
+    NUM_WORKERS = 8
     OUTPUT_DIR = "../lightning_output"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
