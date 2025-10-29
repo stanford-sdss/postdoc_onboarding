@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1                           # total number of tasks across all nodes, 1 for lightning
 #SBATCH --cpus-per-task=8                    # cpu-cores per task (>1 if multi-threaded tasks)
 #SBATCH --partition=serc                     # select the serc partition
-#SBATCH --mem-per-cpu=4G                     # memory per cpu-core (4G is default)
+#SBATCH --mem-per-cpu=4G                     # memory per cpu-core (4G is default, but you can request more)
 #SBATCH --gres=gpu:2                         # number of gpus per requested node
 #SBATCH --time=01:00:00                      # requested run time (HH:MM:SS)
 #SBATCH --mail-type=begin                    # send email when job begins
@@ -26,4 +26,4 @@ nvidia-smi
 
 #Run the training script
 #It's also a good idea to write out the explicit path when scheduling jobs
-python3 /oak/stanford/groups/cyaolai/ElliannaAbrahams/sdss_cc/postdoc_onboarding/python_scripts/resnet18_pipeline.py
+python3 /insert/path/to/your/directory/resnet18_pipeline.py
