@@ -11,7 +11,7 @@ Welcome to the [SDSS Center for Computation](https://sdss-compute.stanford.edu/)
 6. Write an [sbatch file](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/sbatch_scripts/train_resnet18.sh) for your job, and schedule the job using SLURM
 
 ### Do you have any questions? 
-Please reach out to us at [sdss-compute@stanford.edu](mailto:sdss-compute@stanford.edu), or schedule a consultation with our team [here]().
+Please reach out to us at [sdss-compute@stanford.edu](mailto:sdss-compute@stanford.edu), or schedule a consultation with our team [here](https://sdss-compute-consultation.stanford.edu/).
 
 ### Would you like to provide feedback on your SDSS-CC onboarding session?
 Please provide anonymous feedback on your onboarding [here](https://forms.gle/x3wB8qMPWBbeNosR9).
