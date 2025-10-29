@@ -16,7 +16,7 @@ if torch.cuda.is_available():
     for i in range(torch.cuda.device_count()):
         print(f"  GPU {i}: {torch.cuda.get_device_name(i)}")
 
-def main(batch_size, epochs, lr, num_workers, output_dir):
+def main(batch_size, epochs, lr, num_workers, work_dir, output_dir):
     
     #Define datamodule
     class CustomDataModule(L.LightningDataModule):
@@ -34,13 +34,13 @@ def main(batch_size, epochs, lr, num_workers, output_dir):
     
         def prepare_data(self):
             # Downloads only once
-            datasets.FashionMNIST(root="../data", train=True, download=True)
-            datasets.FashionMNIST(root="../data", train=False, download=True)
+            datasets.FashionMNIST(root=work_dir+"/data", train=True, download=True)
+            datasets.FashionMNIST(root=work_dir+"/data", train=False, download=True)
     
         def setup(self, stage=None):
-            self.train_set = datasets.FashionMNIST(root="../data", train=True,
+            self.train_set = datasets.FashionMNIST(root=work_dir+"/data", train=True,
                                                    transform=self.transform)
-            self.val_set = datasets.FashionMNIST(root="../data", train=False,
+            self.val_set = datasets.FashionMNIST(root=work_dir+"/data", train=False,
                                                  transform=self.transform)
     
         def train_dataloader(self):
@@ -126,12 +126,14 @@ if __name__ == "__main__":
 
     #Define hyperparameters, here we switch to 150 epochs and 8 workers
     BATCH_SIZE = 64
-    EPOCHS = 150
+    EPOCHS = 5
     LR = 1e-3
     NUM_WORKERS = 8
-    OUTPUT_DIR = "../lightning_output"
+    WORK_DIR = "/insert/path/to/your/directory/postdoc_onboarding"
+    OUTPUT_DIR = WORK_DIR + "lightning_output"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     #Run the pipeline
     main(batch_size=BATCH_SIZE, epochs=EPOCHS, lr=LR, 
-         num_workers=NUM_WORKERS, output_dir=OUTPUT_DIR)
+         num_workers=NUM_WORKERS, work_dir=WORK_DIR, 
+         output_dir=OUTPUT_DIR)
