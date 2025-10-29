@@ -8,7 +8,7 @@ Welcome to the [SDSS Center for Computation](https://sdss-compute.stanford.edu/)
 3. Clone [this GitHub repo](https://github.com/stanford-sdss/postdoc_onboarding) into Oak and interact using `serc`
 4. Run an [example notebook](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/notebooks/introduction_to_interactive_serc.ipynb), and save the outcomes to Oak
 5. Write a [script file](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/python_scripts/resnet18_pipeline.py) based on analysis pipeline in the [notebook](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/notebooks/introduction_to_interactive_serc.ipynb)
-6. Write an [sbatch file](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/sbatch_scripts/train_resnet18.sh) for your job, and schedule the job using SLURM
+6. Write an [sbatch file](https://github.com/stanford-sdss/postdoc_onboarding/blob/main/sbatch_scripts/train_resnet18.sh) for your job, and schedule the job using Slurm
 
 ### Do you have any questions? 
 Please reach out to us at [sdss-compute@stanford.edu](mailto:sdss-compute@stanford.edu), or schedule a consultation with our team [here](https://sdss-compute-consultation.stanford.edu/).
