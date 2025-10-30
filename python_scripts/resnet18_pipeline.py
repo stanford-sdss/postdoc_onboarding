@@ -129,7 +129,7 @@ if __name__ == "__main__":
     EPOCHS = 5
     LR = 1e-3
     NUM_WORKERS = 8
-    WORK_DIR = "/insert/path/to/your/directory/"
+    WORK_DIR = "/insert/path/to/your/directory/postdoc_onboarding/"
     OUTPUT_DIR = WORK_DIR + "lightning_output"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
