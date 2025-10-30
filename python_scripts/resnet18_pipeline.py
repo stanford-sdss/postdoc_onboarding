@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     #Define hyperparameters, here we switch to 150 epochs and 8 workers
     BATCH_SIZE = 64
-    EPOCHS = 5
+    EPOCHS = 150
     LR = 1e-3
     NUM_WORKERS = 8
     WORK_DIR = "/insert/path/to/your/directory/postdoc_onboarding/"
