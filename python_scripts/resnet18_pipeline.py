@@ -34,13 +34,13 @@ def main(batch_size, epochs, lr, num_workers, work_dir, output_dir):
     
         def prepare_data(self):
             # Downloads only once
-            datasets.FashionMNIST(root=work_dir+"/data", train=True, download=True)
-            datasets.FashionMNIST(root=work_dir+"/data", train=False, download=True)
+            datasets.FashionMNIST(root=work_dir+"data", train=True, download=True)
+            datasets.FashionMNIST(root=work_dir+"data", train=False, download=True)
     
         def setup(self, stage=None):
-            self.train_set = datasets.FashionMNIST(root=work_dir+"/data", train=True,
+            self.train_set = datasets.FashionMNIST(root=work_dir+"data", train=True,
                                                    transform=self.transform)
-            self.val_set = datasets.FashionMNIST(root=work_dir+"/data", train=False,
+            self.val_set = datasets.FashionMNIST(root=work_dir+"data", train=False,
                                                  transform=self.transform)
     
         def train_dataloader(self):
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     EPOCHS = 5
     LR = 1e-3
     NUM_WORKERS = 8
-    WORK_DIR = "/insert/path/to/your/directory/postdoc_onboarding"
+    WORK_DIR = "/insert/path/to/your/directory/"
     OUTPUT_DIR = WORK_DIR + "lightning_output"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
