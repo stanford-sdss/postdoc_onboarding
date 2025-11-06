@@ -11,7 +11,7 @@
 #SBATCH --time=01:00:00                      # requested run time (HH:MM:SS)
 #SBATCH --mail-type=begin                    # send email when job begins
 #SBATCH --mail-type=end                      # send email when job ends
-#SBATCH --mail-user=ellianna@stanford.edu    # fill this in with your sunet id
+#SBATCH --mail-user=<sunet-id>@stanford.edu    # fill this in with your sunet id
 
 #Load any modules needed for your code to run
 module load system 
